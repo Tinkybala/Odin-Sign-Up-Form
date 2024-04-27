@@ -1,0 +1,34 @@
+
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(/Norse-Bold.otf) formt("opentype");
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: "Norse-Bold", sans-serif;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    height: 20rem
+}
+
+.top{
+    height: 20rem;
+}
+
+:root{
+    --default_font: "Norse-Bold";
+}
+
+
+
