@@ -2,33 +2,118 @@
 
 @font-face {
     font-family: "Norse-Bold";
-    src: url(/Norse-Bold.otf) formt("opentype");
+    src: url(Norse-Bold.otf) format("opentype");
 }
+
+:root{
+    --special_font: "Norse-Bold";
+    --default_font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --default_font_size: 25px;
+    --small_font: 20px;
+    --gray: #f5f4f2;
+}
+
 
 body {
     display: flex;
     flex-direction: row;
-    font-family: "Norse-Bold", sans-serif;
+    font-family: var(--default_font);
+    font-size: var(--default_font_size);
+    box-sizing: border-box;
 }
+
 
 #sidebar {
     display: flex;
     flex-direction: column;
 }
 
-fieldset{
+#main{
+    background-color: var(--gray);
     display: flex;
     flex-direction: column;
-    height: 20rem
+}
+
+#main > *{
+    flex: 1 1 0;
+}
+
+form{
+    height: 20rem;
+    margin: 0px;
+    background-color: white;
+    box-shadow: lightgray 3px 5px 4px;
+}
+
+fieldset{
+    border-width: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .top{
     height: 20rem;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
-:root{
-    --default_font: "Norse-Bold";
+#top-text{
+    padding-top: 100px;
 }
+
+#form-box{
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+
+legend{
+    font-weight: bold;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0
+}
+
+label{
+    font-size: var(--small_font);
+}
+
+input{
+    width: 15rem;
+    border-width: 2px;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 30px;
+}
+
+button{
+    margin-top: 2rem;
+    background-color: skyblue;
+    border-width: 0px;
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 49px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#log-in{
+    font-size: var(--small_font);
+    margin-left: 45px;
+    margin-top: 25px;
+}
+
+
 
 
 
