@@ -26,22 +26,24 @@ body {
     margin: 0;
 }
 
-
-#sidebar {
-    display: flex;
-    flex-direction: column;
-}
-
-img{
-    height: 100%;
-    width: 100%;
-}
-
 #main{
     background-color: var(--gray);
     display: flex;
     flex-direction: column;
 }
+
+
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+body > div{
+    flex: 1 1 0;
+}
+
 
 #main > *{
     flex: 1 1 0;
@@ -106,6 +108,17 @@ input{
     border-radius: 5px;
     border-style: solid;
 }
+
+input:hover{
+    border-color: skyblue;
+}
+
+input:focus{
+    border-color: darkblue;
+    outline: none;
+
+}
+
 .form-input{
     display: flex;
     flex-direction: column;
@@ -123,6 +136,7 @@ button{
     font-size: var(--small_font);
     padding-bottom: 10px;
     padding-top: 10px;
+    max-height: 40px;
 }
 
 #log-in{
