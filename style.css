@@ -12,6 +12,7 @@
     --default_font_size: 25px;
     --small_font: 20px;
     --gray: #f5f4f2;
+    --blue: skyblue;
 
 }
 
@@ -44,6 +45,9 @@ body > div{
     flex: 1 1 0;
 }
 
+#main > p{
+    flex: 0.1 1 0;
+}
 
 #main > *{
     flex: 1 1 0;
@@ -53,9 +57,13 @@ form{
     margin: 0px;
     background-color: white;
     box-shadow: lightgray 3px 5px 4px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 fieldset{
+    flex: 1 1 0;
     border-width: 0px;
     display: flex;
     flex-direction: column;
@@ -109,12 +117,18 @@ input{
     border-style: solid;
 }
 
+
+
+input:invalid{
+    border-color: pink;
+}
+
 input:hover{
-    border-color: skyblue;
+    border-color: var(--blue);
 }
 
 input:focus{
-    border-color: darkblue;
+    border-color: var(--blue);
     outline: none;
 
 }
@@ -137,6 +151,18 @@ button{
     padding-bottom: 10px;
     padding-top: 10px;
     max-height: 40px;
+    flex: 1 1 0;
+    margin-bottom: 1rem;
+}
+
+button:hover{
+    outline-width: 2px;
+    outline-color: black;
+    outline-style: solid;
+}
+
+button:active{
+    outline-color: white;
 }
 
 #log-in{
@@ -160,8 +186,6 @@ a:hover{
     color: blue;
     text-decoration: underline;
 }
-
-
 
 
 

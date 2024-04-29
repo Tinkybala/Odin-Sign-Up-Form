@@ -12,50 +12,50 @@
     <div id="main" style="flex: 2 1 0;">
         <div class="top">
             <div id="top-text">
-                <p style="font-size: 30px;">We specialise in mountaineering tours and workshops. Sign up now to get started</p>
+                <p style="font-size: 30px;">We specialise in mountaineering tours and workshops. Sign up now to get started.</p>
                 <p>Let us bring you to new heights.</p>
             </div>
         </div>
-        <form action="example.com" method="post">
+        <form action="#" method="post">
             <fieldset>
                 <legend>Sign up!</legend>
 
                 <div class="form-row">
                     <div class="form-input">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" name="first_name">
+                        <input type="text" id="first_name" name="first_name" required>
                     </div>
                     <div class="form-input">
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" name="last_name">
+                        <input type="text" id="last_name" name="last_name" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-input">
                         <label for="email">E-MAIL</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-input">
-                        <label for="phone_number">PHONE NUMBER</label>
-                        <input type="number" id="phone_number" name="phone_number">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="text" id="phone-number" name="phone-number" pattern="[89]\d{7}" required placeholder="9XXXXXXX or 8XXXXXXX" minlength="1">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-input">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
                     </div>
                     <div class="form-input">
                         <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm_password" name="confirm_password">
+                        <input type="password" id="confirm_password" name="confirm_password" required>
                     </div>
                 </div>
 
             </fieldset>
+            <button type="submit">Create Account</button>
         </form>
-        <button type="submit">Create Account</button>
         <p id="log-in">Already have an account? <a href="https://www.google.com/">Log in</a></p>
     </div>
  </body>
